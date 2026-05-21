@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tentang Kami - Dokter Hewan</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f7f1e7;
+    color:#5c3a21;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:75px;
+    background:#8b5a35;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.about-box{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-box img{
+    width:100%;
+    max-width:400px;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-box h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#8b5a35;
+    font-size:42px;
+}
+
+.about-box p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* VISI MISI */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#8b5a35;
+    color:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card i{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#8b5a35;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#6d4326;
+}
+
+/* FOOTER */
+
+footer{
+    background:#5c3a21;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+    .about-box h1{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+    Tentang Kami
+</header>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+    <div class="about-box">
+
+        <img src="dokter.jpg" alt="Dokter Hewan">
+
+        <h1>Praktek Dokter Hewan</h1>
+
+        <p>
+            Kami menyediakan layanan kesehatan hewan
+            profesional untuk hewan kesayangan dan hewan ternak.
+            Dengan pengalaman dan pelayanan terbaik,
+            kami siap membantu menjaga kesehatan hewan Anda.
+        </p>
+
+        <p>
+            Layanan kami meliputi konsultasi kesehatan,
+            vaksinasi, sterilisasi, pemeriksaan rutin,
+            pengobatan penyakit hewan,
+            hingga perawatan khusus.
+        </p>
+
+        <!-- VISI MISI -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <i class="fas fa-heart"></i>
+
+                <h2>Visi</h2>
+
+                <p>
+                    Menjadi klinik hewan terpercaya
+                    dengan pelayanan terbaik.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-paw"></i>
+
+                <h2>Misi</h2>
+
+                <p>
+                    Memberikan perawatan profesional
+                    dan penuh kasih untuk hewan.
+                </p>
+
+            </div>
+
+        </div>
+
+        <center>
+
+        <a href="index.html" class="btn">
+            Kembali ke Beranda
+        </a>
+
+        </center>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>drh. Adriati Ningsih</h2>
+
+    <br>
+
+    <p>📞 0822 7827 2930</p>
+
+    <br>
+
+    <p>📍 Toari, Kolaka</p>
+
+</footer>
+
+</body>
+</html>
