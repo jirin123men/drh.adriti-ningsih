@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hubungi Kami - Dokter Hewan</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f7f1e7;
+    color:#5c3a21;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:75px;
+    background:#8b5a35;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* TITLE */
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h1{
+    font-size:42px;
+    color:#8b5a35;
+    margin-bottom:10px;
+}
+
+.title p{
+    font-size:18px;
+}
+
+/* CONTACT GRID */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+
+.contact-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+}
+
+.contact-card i{
+    font-size:55px;
+    color:#8b5a35;
+    margin-bottom:20px;
+}
+
+.contact-card h2{
+    margin-bottom:15px;
+    color:#8b5a35;
+}
+
+.contact-card p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* MAP */
+
+.map-box{
+    margin-top:40px;
+    background:white;
+    padding:20px;
+    border-radius:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.map-box iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:20px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#8b5a35;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#6d4326;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    background:#25d366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:38px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    animation:wa 1.5s infinite;
+}
+
+@keyframes wa{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* FOOTER */
+
+footer{
+    background:#5c3a21;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .title h1{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+    Hubungi Kami
+</header>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+    <!-- TITLE -->
+
+    <div class="title">
+
+        <h1>Kontak Dokter Hewan</h1>
+
+        <p>
+            Silakan hubungi kami untuk konsultasi,
+            booking, dan informasi layanan.
+        </p>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <i class="fas fa-phone"></i>
+
+            <h2>Telepon</h2>
+
+            <p>0822 7827 2930</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <i class="fab fa-whatsapp"></i>
+
+            <h2>WhatsApp</h2>
+
+            <p>Chat langsung dengan dokter</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <i class="fas fa-map-marker-alt"></i>
+
+            <h2>Alamat</h2>
+
+            <p>Toari, Kolaka</p>
+
+        </div>
+
+    </div>
+
+    <!-- MAP -->
+
+    <div class="map-box">
+
+        <iframe
+        src="https://maps.google.com/maps?q=Kolaka&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+    </div>
+
+    <center>
+
+    <a href="index.html" class="btn">
+        Kembali ke Beranda
+    </a>
+
+    </center>
+
+</div>
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/6282278272930"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>drh. Adriati Ningsih</h2>
+
+    <br>
+
+    <p>📍 Toari, Kolaka</p>
+
+</footer>
+
+</body>
+</html>
